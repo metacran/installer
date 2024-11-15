@@ -1,5 +1,11 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 One liner to install pak
+  p From R run this:
+    pre
+      code source("https://pak.r-pkg.org/dev")
+
+  p From the shell run this:
+    pre
+      code curl https://pak.r-pkg.org/dev | sh -

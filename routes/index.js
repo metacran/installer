@@ -11,7 +11,7 @@ async function handler(req, res) {
   } else if (ua.match(/^curl/) || ua.match(/^Wget/)) {
     render_sh(req, res);
   } else {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Install pak' });
   }
 };
 
